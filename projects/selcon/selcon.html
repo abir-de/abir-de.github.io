@@ -58,10 +58,13 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
+        <a  >
          <p class="small-caps">SelCon</p>
+        </a>
       </h1>
   
-
+      <!--<p class="lead">A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
+       theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>-->
       <p class="lead"> It is a data subset selection algorithm which ensures efficient training without
     significant accuracy drop.</p>
 
@@ -73,11 +76,11 @@
 
 
       
-      <a class="sidebar-nav-item" href="#">Paper</a>
-      <a class="sidebar-nav-item" href="#">Code and data</a>
+      <a class="sidebar-nav-item" href="https://arxiv.org/abs/2106.12491">Paper</a>
+      <a class="sidebar-nav-item" href="https://github.com/abir-de/SELCON">Code and data</a>
 		<a class="sidebar-nav-item" href="#cnt">Contacts</a>
       
-      <span class="sidebar-nav-item">Accepted @ICML 2021</span>
+      <span class="sidebar-nav-item">Published  @ICML 2021</span>
     </nav>
 
     <!-- p>Accepted @ICML 2021</p -->
@@ -89,32 +92,48 @@
       <div class="posts">
   
   <div class="post">
-  
- 	<p></p>
-   <p><img src="public/css/selcon-style-v2.png" width=30% alt="placeholder" vspace="-30" title="Large example image" style="float:right">
     <h1 class="post-title">
-   <a>     <p class="small-caps">SelCon</p> </a>
+      <a  >
+        <p class="small-caps">SelCon</p>
+      </a>
     </h1>
+ 
 
+   <!-- <span class="post-date">28 Dec 2013</span> -->
+    <!-- <p>  It is a data subset selection algorithm which ensures efficient training without
+    significant accuracy drop.  </p> -->
 
 <!-- h3>Introduction</h3-->
 
-<p>  One of the many ways towards efficient and cost-effective machine learning is 
+<p align="justify">  One of the many ways towards efficient and cost-effective machine learning is 
 to suitably select of a subset of training instances, so that the training
 algorithm can be run in an environment with limited
 resources. In our work, we design SELCON,
 a new subset selection method for regression problem, 
 which leads to an efficient training without significant loss of accuracy. 
  </p>
+ 
+ 
 <h3>Salient features</h3>
 <ul>
-<li> We cast our problem as a joint optimization problem which aims to select the
+<li> 
+<p align="justify"> We cast our problem as a joint optimization problem which aims to select the
 training subset as well as the model parameters subject to a set of constraints
- ensuring that the error on validation set remains below an acceptable level. </li>
-<li>We show that solving the above problem is equivalent
- to minimizing a monotone and approximate submodular function.</li>
+ ensuring that the error on validation set remains below an acceptable level.
+  </p>
+  </li>
+<li>
+<p align="justify">
+We show that solving the above problem is equivalent
+ to minimizing a monotone and approximate submodular function.
+  </p>
+ </li>
+<p align="justify">
 <li> We design an approximation algorithm to solve the problem. Moreover, we also show an approximation guarantee
-when the trained model parameters are imperfect estimates.</li>
+when the trained model parameters are imperfect estimates.
+
+</li>
+
 </ul>
 
 <h3> Problem setup </h3>
@@ -189,9 +208,9 @@ we present the results for NYSE-High datasets.
 <h3 id=cnt>Contacts</h3>
 
 If you have any questions/suggestions, please contact <a href = "mailto: durgas@cse.iitb.ac.in"> Durga S</a>, 
-<a href = "mailto: rishabh.iyer@utdallas.edu">Rishabh Iyer</a>,
-<a href = "mailto: ganesh@cse.iitb.ac.in"> Ganesh Ramakrishnan</a>
-and <a href = "mailto: abir@cse.iitb.ac.in"> Abir De</a>.  
+<a href = "mailto: ganesh@cse.iitb.ac.in"> Ganesh Ramakrishnan</a>,
+<a href = "mailto: rishabh.iyer@utdallas.edu">Rishabh Iyer</a> and
+ <a href = "mailto: abir@cse.iitb.ac.in"> Abir De</a>.  
  
 <br></br> 
 We use the website template from <a href "https://github.com/poole/hyde"> https://github.com/poole/hyde </a> </p> 
