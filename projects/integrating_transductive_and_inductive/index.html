@@ -58,7 +58,7 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
   <!-- Icons -->
-  <link rel="shortcut icon" sizes="144x144" href="lp_diagram.png">
+  <link rel="shortcut icon" sizes="144x144" href="cikmpic.png">
                                  <!--<link rel="shortcut icon" href="/public/favicon.ico"> -->
 
   <!-- RSS -->
@@ -81,7 +81,10 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
       <h1>
-         <p class="smaller-caps">Integrating Trans. and Ind. </p>
+         <p class="smaller-caps"> 
+
+Designing initial node features of GNN
+ </p>
       </h1>
   
 
@@ -95,11 +98,11 @@
 
 
       
-      <a class="sidebar-nav-item" href="#">Paper</a>
-      <a class="sidebar-nav-item" href="#">Code and data</a>
-		<a class="sidebar-nav-item" href="mailto:abir@cse.iitb.ac.in">Contacts</a>
+      <a class="sidebar-nav-item" href="https://arxiv.org/abs/2108.10108">Paper</a>
+      <a class="sidebar-nav-item" href="https://www.cse.iitb.ac.in/~abir/codes/linkPredCIKM2021.zip">Code and data</a>
+		<a class="sidebar-nav-item" href="#cnt">Contacts</a>
       
-      <span class="sidebar-nav-item">Accepted @CIKM 2021</span>
+      <span class="sidebar-nav-item">Published @CIKM 2021</span>
     </nav>
 
     <!-- p>Accepted @ICML 2021</p -->
@@ -113,9 +116,9 @@
   <div class="post">
   
  	<p></p>
-   <p><img src="lp_diagram.png" width=30% alt="placeholder" vspace="-30" title="Large example image" style="float:right">
+   <p><img src="cikmpic.png" width=30% alt="placeholder" vspace="-30" title="Large example image" style="float:right">
     <h1 class="post-title">
-   <a>     <p class="small-caps">Integrating Transductive And Inductive Embeddings Improves Link Prediction Accuracy</p> </a>
+   <a>     <p class="small-caps">How to design input node features for GNN? </p> </a>
     </h1>
 
 
@@ -174,41 +177,42 @@ $$ \newcommand{\nnbr}{\overline{\text{nbr}}}
 
 $$
 
- <p>
-   The performance of GNNs depends strongly on the input node features, whichin turn vary across networks. Selecting appropriate node features remains application-dependent and generally an open question. Moreover, owing to privacy and ethical issues, use of personalized node features is often restricted, resuling in many publicly available data from online social network (OSN) not having any node features(e.g., demography). In this work, we provide a comprehensive experimental analysis which shows that harnessing a transductive technique (e.g., Node2Vec) for obtaining initial node representations, from which an inductive node embedding technique  (GNNs) takesover, leads to substantial improvements in link prediction (LP) accuracy in online social networks. 
+ <p align="justify">
+   The performance of GNNs depends strongly on the input node features which vary across networks. Selecting appropriate node features remains application-dependent and generally an open question. Owing to privacy and ethical issues, use of personalized node features is often restricted. Here, we  show that harnessing a transductive technique (e.g., Node2Vec) for obtaining initial node representations, from which an inductive node embedding technique  (GNNs) takes over, leads to substantial improvements in link prediction (LP) accuracy in online social networks. 
  </p>
 
 <h3>Salient features</h3>
 <ul>
-  <li>
+  <li>  <p align="justify">
     we provide a detailed experimental study where we depict a two step training procedure which is consistently more effective for LP task in OSN than introducing other types of ad-hoc proxy node features into GNNs.
-  </li>
+  </li>  </p>
   <li>
     The two step training procedure consist of
     <ul>
-      <li>
+      <li>  <p align="justify">
         Train one set of node embeddings which are agnostic to the graph neural network (GNN), using a transductive embedding model (eg Node2Vec, Matrix Factorisation) containing only structural information about a node.
-      </li>
-      <li>
+      </li>  </p>
+      <li>  <p align="justify">
         Feed these embedding vectors as input node features into an inductive model (GNNs), training it using an LP loss function, to obtain the final node embeddings.
-      </li>
+      </li>  </p>
     </ul>
   </li>
-  <li>
+  <li>  <p align="justify">
     We perform a comparative analysis across five datasets and four GNN models, which reveal that for OSN, such a combination of transductive and inductive models consistently improves predictive performance, for all commonly-used LP loss functions.
-  </li>
+  </li>  </p>
 </ul>
 
-<h3> Method </h3>
 
+<!--
+<h3> Method </h3>
 <h4>Notation</h4>
 
-<p>
+ <p align="justify">
   Given a graph $ G=(V,E) $, we denote $\nbr(u)$ and $\nnbr(u)$ as the neighbors and non-neighbors of $u$, respectively. In this context, note that $\nbr(u)$ also contains $u$, $\ie$, $\nbr(u)=\set{v\given (u,v)\in E}\cup \set{u}$, $\nnbr(u)=\set{v\neq u \given (u,v)\not\in E}$. Finally, we denote $y_{u,v}=1$ if $v\in \nbr(u)$ and $y_{u,v} = 0$, otherwise
 </p>
-
-<h4>Inductive Node Embeddings</h4>
- <p>
+-->
+<h3>Inductive Node Embeddings</h4>
+  <p align="justify">
    Given a node $u$, intial node features $\zb_u$ and an integer $K$,  a GNN takes the underlying graph $G=(V,E)$ and the initial node embeddings $\set{\zb_u \given u \in V }$ as input, and then computes inductive node embeddings $\set{\emb_u \given u \in V }$ by aggregating structural information from the nodes $k=1,2,...,K$ hop distances away from $u$ in the following iterative manner.
   \begin{align}
    &\xb_u(0) = \zb_u  \label{eq:gnn-1}\\
@@ -217,7 +221,7 @@ $$
   \end{align}
   The exact form of $F_{\theta}$ and $G_{\theta}$ varies across different GNN models.
  </p>
- <p>
+ <p align="justify">
    For a downstream task such as LP, we compute the score between nodes $(u,v)$ as 
   \begin{align}
   s_{\theta}(u,v) = H_{\theta}(\emb_u,\emb_v) \label{eq:score}
@@ -225,12 +229,12 @@ $$
   Here $H_{\theta}$ is another network that compares embeddings $\emb_u, \emb_v$ to arrive at a link score.  We call this scheme `inductive' because, once $F_\theta, G_\theta, H_\theta$ are trained for a task, their induced model can be applied to a completely new graph in the same problem domain, to get meaningful node representations.
  </p>
 
-<h4>Transductive Node Embeddings</h4>
-  <p>
+<h3>Transductive Node Embeddings</h3>
+   <p align="justify">
     Our key noteworthy observation is that when graph features are used to $\textit{also}$ determine the initial $\set{\zb_u}$, the GNNs may behave better and lead to better end-task accuracy. We will now describe two ways in which how graph-based transductive methods can be used to obtain these initial node representations.
   </p>
     
-  <p>
+ <p align="justify">
   <b>Node2Vec (N2V)</b> Given a node $u$, Node2Vec first samples nodes 
   $N_S(u)$ using different random walk based heuristics. Then it models the likelihood of the sampled
   nodes using a multinomial distribution on the proximity of the nodes, measured in terms of  $\exp(\zb_u ^\top \zb_v)$.
@@ -244,13 +248,13 @@ $$
   \end{align}
   </p>
 
-<h4>Combining inductive and transductive approaches</h4>
+<h3>Combining inductive and transductive approaches</h4>
 
-<p>
+ <p align="justify">
   Once we train the transductive embeddings $\set{\zb_u}$ using Eq. \eqref{eq:node2vec}, we feed them into the GNN model \eqref{eq:gnn-1}--\eqref{eq:gnn-3} to learn $\emb_u$.
 </p>
 
-<p>
+ <p align="justify">
   <b>Training losses</b> We learn the parameters $\theta$ used to parameterize Eqs.~\eqref{eq:gnn-2},~\eqref{eq:gnn-3}
   by minimizing a LP loss function. In this paper, we consider two different loss functions, $\ie$,
   binary cross entropy (BCE) loss and ranking loss, which are given as follows:
@@ -258,10 +262,10 @@ $$
   <b>BCE loss</b> We compute the binary cross entropy loss as follows: 
   \begin{align}
    \ell_{\text{BCE}}(\theta; G) &=   
-      -\sum_{(u,v) \in E} \log[ \text{sigmoid}(s_\theta {(u,v)})]
-      -\sum_{(u,v)\not\in E}\log[1- \text{sigmoid}(s_\theta {(u,v)})]
+      -\sum_{(u,v) \in E} \log[ \sigma(s_\theta {(u,v)})]
+      -\sum_{(u,v)\not\in E}\log[1- \sigma(s_\theta {(u,v)})]
   \end{align}
-
+where $\sigma$ is sigmoid function.
   <b>Pairwise ranking loss</b> We compute the pairwise ranking loss as follows:
   \begin{align}
    \ell_{\text{Rank}}(\theta; G) &=   
