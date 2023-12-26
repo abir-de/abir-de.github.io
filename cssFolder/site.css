@@ -131,10 +131,17 @@ dt{    color: #708090			;
     margin-left: 0px;
   font-smoothing: antialiased;
 }
+dtx{    color: black			;
+   display: block;
+  margin-top: 0px;
+      margin-bottom: 6px;
+    margin-left: 1px;
+  font-smoothing: antialiased;
+}
 
 
 dd{  		   display: block;
- 
+ margin-left: 20px;
     margin-bottom: 10px;
   font-smoothing: antialiased;
 }
