@@ -1,78 +1,275 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <!- Standard Meta ->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Site Properties -->
+  <title>Introduction to Machine Learning</title>
 
-  <!- Site Properties ->
-  <title>Publications</title>
-
-  <link rel="stylesheet" type="text/css" href="../cssFolder/reset.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/site.css">
-
-  <link rel="stylesheet" type="text/css" href="../cssFolder/container.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/grid.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/header.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/image.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/menu.css">
-
-  <link rel="stylesheet" type="text/css" href="../cssFolder/divider.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/list.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/segment.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="../cssFolder/icon.css">
-
+   <link rel="stylesheet" type="text/css" href="t1.css">
+   <link rel="stylesheet" type="text/css" href="cssFolder/site.css">
+  <link rel="stylesheet" type="text/css" href="cssFolder/menu.css">
   <style type="text/css">
   body {
- 
- 
-    background-color:#fffbf7  ;
-    background-position:87% 29%;
-    background-size: 20%;
+    background-color: #fffbf7 ;
+   
+    background-repeat: no-repeat;
+    -webkit-print-color-adjust: exact;
+  background-attachment: fixed;
+  background-size: cover;
+      padding: 0px;
+    margin: 0px;
+
+
+    margin-bottom : 0px;
+    	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+
+  }
+   
+     hll {
+  font-family:  arial;
+   color:  red;
+}
+
+   hx  {
+  font-family:  arial;
+}
+
+
+   hxx  {
+  font-family:  monospace;
+}
+   a {
+    color: blue;
+  }
+
+   urgent {
+    color:  #CC0000;
+  }
+  a:hover {
+    color: #FF5000;
   }
   .ui.menu .item img.logo {
-    margin-right: 0.5em;
-  }
-  .main.container {
-    margin-top: 3em;
-  }
-  .wireframe {
-    margin-top: 2em;
-  }
-  .ui.footer.segment {
-    margin: 5em 0em 0em;
-    padding: 5em 0em;
-  }
-  </style>
+    margin-right: 1.5em;
 
+  }
+
+  .main.container {
+    margin-top: 7em;
+
+  }
+
+  .ui.footer.segment {
+    margin: 5em 0 0em 0;
+  }
+  .ui.segment {
+    background: transparent;
+
+  }
+  .ui.header, .ui.top.header {
+    background: transparent;
+
+
+  }
+
+  h1.ui.header, h4.ui.header  {
+    font-weight: bold;
+
+  }
+  .bold {
+    font-weight: bold;
+  }
+
+  @media print {
+    body {
+      background-position: 175% -100px;
+    }
+
+    .ui.menu, .timeline, .people, .footer, .resources {
+      display: none;
+
+
+    }
+
+
+    * {-webkit-print-color-adjust:exact;}
+
+    .main.container {
+      margin-top: 2em;
+
+    }
+  }
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: orange;
+  border-radius: 50%;
+ display: inline-block;
+ float: left;
+ margin: auto -20px;	
+
+ 
+}
+   .hxy  {
+  font-family:  arial;
+  font-size: 1.2rem;
+  margin-top: 100px
+}
+   div1 {
+      background-color: red;
+ 
+  margin-right: 1590px;
+  margin-left: -8000px;
+	}
+  </style>
 </head>
+
+
+
+ 
+
+ 
 <body>
-   <div class="ui ../Fixed inverted menu">
+  
+    <div class="ui fixed inverted menu">
     <div class="ui container">
-      <a href="https://abir-de.github.io/" class="header item">
- 	About
+ 
+       <a href="ad.html#res" class="header item">
+ 	Research interests
       </a>
-      <a href="#" class="header item">
+      <a href="pub.html" class="header item">
  	Publications
       </a>
-     <!--<a href="rec.html" class="header item">Recognitions</a>-->
+     <a href="ad.html#rec" class="header item">Recognitions</a>
+           <a href="ad.html#wtut" class="header item">
+ 	Workshop/tutorials
+      </a>
      </div>
   </div>
- <ul>
-  <div class="ui main text container">
 
-<p vspace="-1"> </p>  <rint vspace="-10" id=pub>Publications</rint> <br> <br>
-<li>
-VarSCene: A Deep Generative Model for Realistic Scene Graph Synthesis
 
-      <br>  With Tathagat Verma, Yatish Agarwal, Vishwa Vinay and Soumen Chakrabarti
-<br><em>  In ICML, 2022 </em>
+
+ 
+<div class="hxy">
+
+   <rint  id=pub>Recent Publications</rint> <br> <br>
+<ul style="list-style-type:square">
+<li> Generator Assisted Mixture of Experts For Feature Acquisition in Batch
+
+
+      <br> With Vedang Asgaonkar and Aditya Jain
+<br><em>  In AAAI, 2024 </em>
+        <br>[<a href=https://arxiv.org/abs/2312.12574><span class="caps">Paper</span></a> |
+         <a href=https://github.com/VedangAsgaonkar/genex><span class="caps">Code</span></a>]
+
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+<li> Continuous Treatment Effect Estimation using Gradient Interpolation and Kernel Smoothing
+
+      <br> With N Lokesh, Akshay Iyer, and Sunita Sarawagi
+               <br><em>  In AAAI, 2024 </em>
+               
         <br>[<a href=#><span class="caps">Paper</span></a> |
          <a href=#><span class="caps">Code</span></a>]
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
 
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+
+
+<li>
+Locality Sensitive Hashing in Fourier Frequency Domain For Soft Set Containment Search
+      <br> With Indradyumna Roy, Rishi Agarwal, Soumen Chakrabarti and Anirban Dasgupta
+               <br><em>  In NeurIPS, 2023 </em><hll> (Spotlight) </hll>
+        <br>[<a href=https://openreview.net/pdf?id=q3fCWoC9l0><span class="caps">Paper</span></a> |
+         <a href=https://github.com/structlearning/fhashnet><span class="caps">Code</span></a>]
+
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+<li>
+Efficient Data Subset Selection to Generalize Training Across Models: Transductive and Inductive Networks
+      <br> With Eeshaan Jain, Tushar Nandy, Gaurav Aggarwal, Ashish V. Tendulkar and Rishabh Iyer
+               <br><em>  In NeurIPS, 2023 </em> 
+        <br>[<a href=https://openreview.net/pdf?id=q3fCWoC9l0><span class="caps">Paper</span></a> |
+         <a href=https://github.com/structlearning/subselnet><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+
+<li>
+Discrete Continuous Optimization Framework for Simultaneous Clustering and Training in Mixture Models
+      <br>  With Parth Vipul Sangani, Arjun Shashank Kashettiwar, Pritish Chakraborty, Bhuvan Reddy Gangula, Durga S, Ganesh Ramakrishnan and Rishabh K Iyer.
+      <br><em>  In ICML, 2023 </em>
+        <br>[<a href=https://proceedings.mlr.press/v202/sangani23a/sangani23a.pdf><span class="caps">Paper</span></a> |
+         <a href=https://github.com/parthsangani00/PRESTO><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+
+<li>
+Differentiable Change-point Detection With Temporal Point Processes
+      <br>  With Paramita Koley, Harshavardhan Alimi, Shrey Singla, Sourangshu Bhattacharya and Niloy Ganguly
+<br><em>  In AISTATS, 2023 </em>
+        <br>[<a href=https://proceedings.mlr.press/v206/koley23a.html><span class="caps">Paper</span></a> |
+         <a href=https://github.com/paramita1024/Changepoint-TPP><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+<li>
+Learning and Maximizing Influence in Social Networks Under Capacity Constraints
+      <br>  With Pritish Chakrabarti, Sayan Ranu and Ipsit Mantri
+<br><em>  In WSDM, 2023 </em>
+        <br>[<a href=https://dl.acm.org/doi/abs/10.1145/3539597.3570433><span class="caps">Paper</span></a> |
+         <a href=https://gitlab.com/PritishC/influence-maximization><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+<li>
+Learning Recourse on Instance Environment to Enhance Prediction Accuracy
+      <br>  With Lokesh N, Guntakanti Sai Koushik and Sunita Sarawagi
+<br><em>  In NeurIPS, 2022 </em>
+        <br>[<a href=https://openreview.net/pdf?id=nrOLtfeiIdh><span class="caps">Paper</span></a>  |
+ <a href=https://github.com/nlokeshiisc/recourse_release><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+<li>
+Neural Estimation of Submodular Functions with Applications to Differentiable Subset Selection.
+      <br>  With Soumen Chakrabarti
+<br><em>  In NeurIPS, 2022 </em>
+        <br>[<a href=https://arxiv.org/abs/2210.11033><span class="caps">Paper</span></a> |
+         <a href=https://github.com/Indradyumna/MCSNET><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+
+<li>
+Maximum Common Subgraph Guided Graph Retrieval: Late and Early Interaction Networks
+      <br>  With Indradyumna Roy  and Soumen Chakrabarti
+<br><em>  In NeurIPS, 2022 </em>
+        <br>[<a href=https://arxiv.org/abs/2210.11020><span class="caps">Paper</span></a> |
+         <a href=https://github.com/Indradyumna/MCSNET><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
+
+<li>
+VarScene: A Deep Generative Model for Realistic Scene Graph Synthesis
+      <br>  With Tathagat Verma, Yatish Agarwal, Vishwa Vinay and Soumen Chakrabarti
+<br><em>  In ICML, 2022 </em>
+        <br>[<a href=https://proceedings.mlr.press/v162/verma22b/verma22b.pdf><span class="caps">Paper</span></a> |
+         <a href=https://github.com/structlearning/varscene><span class="caps">Code</span></a>]
+<p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
+</li>
  
 
 <li>
@@ -120,7 +317,7 @@ Learning Temporal Point Processes for Efficient Retrieval of Continuous Time Eve
       <br>  With Nastaran Okati, and Manuel Gomez Rodriguez
 <br><em>  In NeurIPS, 2021 </em>
         <br>[<a href=https://arxiv.org/abs/2103.08902><span class="caps">Paper</span></a> |
-         <a href= https://github.com/anshuln/Training-for-the-Future><span class="caps">Code</span></a>]
+         <a href= https://github.com/Networks-Learning/differentiable-learning-under-triage><span class="caps">Code</span></a>]
 </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
 
     Counterfactual Explanations in Sequential Decision Making Under Uncertainty
@@ -152,15 +349,15 @@ Learning Temporal Point Processes for Efficient Retrieval of Continuous Time Eve
       <br>  With Indradyumna Roy and Soumen Chakrabarti
 <br><em>  In AAAI, 2021 </em>
         <br>[<a href=https://arxiv.org/abs/2012.08974><span class="caps">Paper</span></a> |
-         <a href=#><span class="caps">Code</span></a>]
+         <a href=https://github.com/Indradyumna/PermGNN><span class="caps">Code</span></a>]
 </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
 
 <li>
    Differentially Private Link Prediction With Protected Connections
       <br>  With Soumen Chakrabarti
 <br><em>  In AAAI, 2021 </em>
-        <br>[<a href=#><span class="caps">Paper</span></a> |
-         <a href=#><span class="caps">Code</span></a>]
+        <br>[<a href=https://arxiv.org/abs/1908.04849><span class="caps">Paper</span></a> |
+         <a href=https://github.com/abir-de/dplp><span class="caps">Code</span></a>]
 
 </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
 
@@ -177,7 +374,7 @@ Learning Temporal Point Processes for Efficient Retrieval of Continuous Time Eve
    Long Horizon Forecasting of Temporal Point Processes
       <br>  With Prathamesh Deshpande, Kamalesh Marathe and Sunita Sarawagi
 <br><em>  In WSDM, 2021 </em>
-        <br>[<a href="#"><span class="caps">Paper</span></a>]
+        <br>[<a href="https://arxiv.org/abs/2101.02815"><span class="caps">Paper</span></a>]
 
 
 </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
@@ -222,223 +419,7 @@ Learning Temporal Point Processes for Efficient Retrieval of Continuous Time Eve
 
 </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
 
-<li>
-
-  Can a User Guess What Her Followers Want
-      <br> With Adish Singla, Utkarsh Upadhyay and Manuel Gomez-Rodriguez
-      <br><em> In WSDM, 2020</em>
-      <br><em> Also  presented in the Workshop of Behavioral EC at ACM EC, 2019</em>
-        <br>[<a href="https://arxiv.org/abs/1909.00440v2"><span class="caps">Paper</span></a>|
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
-  <li>
-    Learning a Linear Influence Model Between Actors from Transient Opinion Dynamics
-    <br> With Sourangshu Bhattacharya, Parantapa Bhattacharya, Niloy Ganguly, and Soumen Chakrabarti
-   <br>  <em> In ACM Transactions on the Web, 2019</em>
-
-       <br> [<a href="papers/mypapers/opTweb.pdf"><span class="caps">Paper</span></a> |
-        <a href="https://github.com/bingola/LinearOpinionModels"><span class="caps">Code</span></a> |
-        <a href="https://rebrand.ly/dataset"><span class="caps">Data</span></a>]
-
-   </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
-
-
- <li>
-
-  Enhancing human learning via spaced repetition optimization
-      <br> With Behzad Tabibian, Utkarsh Upadhyay, Ali Zarezade, Bernhard Scholkopf and Manuel Gomez-Rodriguez
-      <br><em> In PNAS, 2019</em>
-      <br><em> Also presented in the Machine Teaching Workshop at NeurIPS, 2017</em>
-        <br>[<a href="https://www.pnas.org/content/116/10/3988"><span class="caps">Paper</span></a>|
-         <a href="https://github.com/Networks-Learning/Memorize"><span class="caps">Code</span></a>]
-
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
  
-<li>
-
-   Learning Network Traffic Dynamics Using Temporal Point Process
-      <br> With Avirup Saha, Niloy Ganguly, Sandip Chakraborty
-      <br><em> In IEEE Conference on Computer Communications (INFOCOM), 2019</em>
-        <br>[<a "papers/mypapers/avirup-paper-2019.pdf"><span class="caps">Paper</span></a>]
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-
-   On the Complexity of Opinions and Online Discussions
-      <br> With Utkarsh Upadhyay, Ashish Pappu and  Manuel Gomez Rodriguez
-      <br><em> In ACM Conference on Web Search and Data Mining (WSDM), 2019</em>
-        <br>[<a href="https://arxiv.org/pdf/1802.06807"><span class="caps">Paper</span></a>|
-  <a href="https://github.com/Networks-Learning/discussion-complexity"><span class="caps">Code</span></a>]
- 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
- 
-  <li>
-   Designing Deep Generative Models for Molecular Graphs
-      <br>  With Bidisha Samanta, Gourhari Jana, Pratim K. Chattaraj, Niloy Ganguly, and Manuel Gomez Rodriguez
-<br> In AAAI Conference on Artificial Intelligence (AAAI), 2019 </em>
-      <br><em> Also  presented in the Workshop of Theoretical Foundations and Applications of Deep Generative Models at ICML 2018</em>
-        <br>[<a href="https://arxiv.org/pdf/1802.05283"><span class="caps">Paper</span></a> |
-         <a href="https://github.com/Networks-Learning/nevae"><span class="caps">Code</span></a>]
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
- 
-<li>
-        Deep Reinforcement Learning of Marked Temporal Point Processes
-        <br> With Utkarsh Upadhyay and  Manuel Gomez Rodriguez
-      <br><em>  In the advances of Neural Information Processing Systems (NeurIPS), 2018</em>
-        <br>[<a href="https://arxiv.org/pdf/1805.09360"><span class="caps"> Paper </span></a>|
-         <a href="https://github.com/Networks-Learning/tpprl"><span class="caps">Code</span></a>]
-
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    CRPP: Competing Recurrent Point Process for Modeling Visibility Dynamics in Information Diffusion
-      <br>With Avirup Saha, Bidisha Samanta, Niloy Ganguly
-    	<br> <em>In ACM Conference of Knowledge and Information Management Systems (CIKM), 2018</em>
-        <br>[<a href="https://dl.acm.org/doi/10.1145/3269206.3271726"><span class="caps">Paper</span></a> | 
-        <a href="https://github.com/ASCARATHIRA/CRPP"><span class="caps">Code</span></a> | 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    Shaping Opinion Dynamics in Social Networks
-      <br>With Sourangshu Bhattacharya, and Niloy Ganguly
-    	<br> <em>In Proceedings of the  International Conference on Autonomous Agents and MultiAgent Systems (AAMAS), Pages: 1336-1344, 2018</em>
-        <br>[<a href="papers/mypapers/smarshape.pdf"><span class="caps">Paper</span></a> | 
-        <a href="https://github.com/bingola/smartShape"><span class="caps">Code</span></a> | 
-        <a href="https://www.dropbox.com/sh/3wnfri394o7xnnu/AADcqu3930SYoMb9bQLBcdpea?dl=0 "><span class="caps">Data</span></a>].
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    Steering Social Activity: A Stochastic Optimal Control Point of View
-    <br> With Ali Zarezade, Utkarsh Upadhyay, Hamid Rabiee, and Manuel Gomez Rodriguez
-    <br><em>In Journal of Machine Learning Research, vol:8(35), Pages: 1-35, 2018</em>
-        <br>[<a href="https://arxiv.org/pdf/1802.07244"><span class="caps">Paper</span></a> |
-        <a href="https://github.com/Networks-Learning/RedQueen"><span class="caps">Code</span></a>]
-
- </li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    Demarcating Endogenous and Exogenous Opinion Diffusion Process on Social Networks
-      <br> With Sourangshu Bhattacharya, and Niloy Ganguly
-      <br><em>In Proceedings of the  World Wide Web Conference (WWW), Pages: 549-558,  2018</em>,
-      <br>[<a href="papers/mypapers/cherryPick.pdf"><span class="caps">Paper</span></a> |
-      <a href="https://rebrand.ly/dataset"><span class="caps">Data</span></a>]
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
- <li>
-    Cheshire: An Online Algorithm for Activity Maximization in Social Networks
-    <br>With Ali Zarezade, Hamid Rabiee, and Manuel Gomez Rodriguez,
-   <br> <em>Allerton Conference on Communication, Control, and Computing, 2017 (Invited Paper)</em>
-   <br>[<a href="https://arxiv.org/pdf/1703.02059"><span class="caps">Paper</span></a>]
-
- 
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
- <li>
-    SLANT+: A Nonlinear Model for Opinion Dynamics in Social Networks
-    <br>With Bhushan Kulkarni, Sumit Agarwal, Sourangshu Bhattacharya, and Niloy Ganguly
-    <br><em>In Proceedings of IEEE International Conference on Data Mining (ICDM), Pages: 931-936, 2017</em>
-        <br>[<a href="papers/mypapers/creed.pdf"><span class="caps">Paper</span></a> |
-         <a href="https://github.com/bingola/Slantplus"><span class="caps">Code</span></a> |
- 	<a href="https://www.dropbox.com/sh/3wnfri394o7xnnu/AADcqu3930SYoMb9bQLBcdpea?dl=0 "><span class="caps">Data</span></a>]
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    LMPP: A Large Margin Point Process Combining Reinforcement and Competition in Hashtag Popularity
-    <br>With Bidisha Samanta, Abhijnan Chakraborty, and  Niloy Ganguly,
-    <br><em> In Proceedings of the  International Joint Conference on Artificial Intelligence (IJCAI), Pages: 2679-2685, 2017</em>
- <br>[<a href="papers/mypapers/lmpp.pdf"><span class="caps">Paper</span></a> |
-        <a href="https://github.com/bidishasamantakgp/MaxMarginMLE"><span class="caps">Code</span></a> |
-        <a href="https://zenodo.org/record/1163560#.W4ADV63SDmE"><span class="caps">Data</span></a>].
-
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
- <li>
-    STRM: A Sister Tweet Reinforcement Process for Modeling Hashtag Popularity
-    <br> With Bidisha Samanta and  Niloy Ganguly
-    <br> <em> In Proceedings of IEEE Conference on Computer Communications (INFOCOM), Pages: 1-9, 2017</em>
-
-	<br>[<a href="papers/mypapers/strm.pdf"><span class="caps">Paper</span></a> |
-         <a href="https://github.com/bingola/Slantplus"><span class="caps">Code</span></a> | 
-         <a href="https://zenodo.org/record/1163560#.W4ADV63SDmE"><span class="caps">Data</span></a>]. 
- 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    Learning and Forecasting Opinion Dynamics in Social Networks
-    <br>With Isabel Valera,   Niloy Ganguly, Sourangshu Bhattacharya, and Manuel Gomez Rodriguez
-     <br><em>  In Advances in Neural Information Processing Systems (NIPS), Pages: 397-405, 2016 </em>
-        <br>[<a href="papers/mypapers/slant.pdf"><span class="caps">Paper</span></a> |
-         <a href="https://github.com/bingola/opinionSlant"><span class="caps">Code</span></a> | 
-         <a href="https://rebrand.ly/dataset"><span class="caps">Data</span></a>|
-         <a href= "https://sinews.siam.org/Details-Page/modeling-opinion-dynamics-in-social-networks-1"><span class="caps">News-coverage</span></a>|
-          <a href= "https://www.youtube.com/watch?v=niWRhUGN_s4"><span class="caps">Spotlight</span></a>]
-
- 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    Discriminative Link Prediction using Local, Community and Global Signals
-    <br>With Sourangshu Bhattacharya, Sourav Sarkar, Niloy Ganguly, and Soumen Chakrabarti
-    <br> <em>In IEEE Transactions on Knowledge and Data Engineering, vol:28(8) Pages: 2057–2070, 2016</em>
-
-        <br>[<a href="papers/mypapers/LinkPredJ.pdf"><span class="caps">Paper</span></a>]
-
- 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- 
-
-
- <li>
-    Knowlywood: Mining Activity Knowledge From Hollywood Narratives,
-   <br> With Niket Tandon, Gerard De Melo and Gerhard Weikum,
-   <br> <em> In Proceedings of the ACM International on Conference on Information and Knowledge Management (CIKM), Pages:223–232, 2015</em>
-
-        <br>[<a href="papers/mypapers/knowlywood.pdf"><span class="caps">Paper</span></a>]
-
- 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
-
- <li>
-    Lights, Camera, Action: Knowledge Extraction from Movie Scripts,
-    <br> With Niket Tandon, Gerard De Melo and Gerhard Weikum,
-    <br><em> Poster paper in the  World Wide Web Conference (WWW), 2015</em>,
-      <br>[<a href="papers/mypapers/knowlywoodP.pdf"><span class="caps">Paper</span></a>].
- 
- 
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>
-
- <li>
-    Learning a Linear Influence Model Between Actors from Transient Opinion Dynamics,
-    <br> With Sourangshu Bhattacharya, Parantapa Bhattacharya, Niloy Ganguly, and Soumen Chakrabarti,
-   <br>  <em> In Proceedings of the ACM International on Conference on Information and Knowledge Management (CIKM), Pages: 401-410, 2014</em>,
-
-       <br> [<a href="papers/mypapers/opCIKM.pdf"><span class="caps">Paper</span></a> |
-        <a href="https://github.com/bingola/LinearOpinionModels"><span class="caps">Code</span></a> | 
-        <a href="https://rebrand.ly/dataset"><span class="caps">Data</span></a>].
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>    
- <li>
-    Discriminative Link Prediction using Local Links, Node Features and Community Structure,
-    <br>With  Niloy Ganguly, and Soumen Chakrabarti,
-    <br><em> In Proceedings of IEEE International Conference on Data Mining (ICDM), Pages:1009-1014, 2013</em>,
-        <br>[<a href="papers/mypapers/LinkPred.pdf"><span class="caps">Paper</span></a>].
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>    
- <li>
-    Local Learning of Item Dissimilarity Using Content and Link Structure,
-    <br>With Maunendra Sankar Desarkar, Niloy Ganguly, and Pabitra Mitra,
-  <br> <em>In Proceedings of ACM Conference on Recommender Systems (RecSys), Pages: 221–224, 2012</em>,
-  [<a href="papers/mypapers/recsys.pdf"><span class="caps">Paper</span></a>].
-
-</li><p style="font-size:10px;line-height:5;"></p><p style="font-size:10px;line-height:5;"></p>    
 </div>
 </ul> 
  
