@@ -159,13 +159,12 @@
 My current research focus is designing machine learning models and methods for structured objects, e.g., graphs and sets. 
 The specific sub-areas that I am currently working in are as follows: 
  <dl>
-  <dt>  Differentiable surrogtes of combinatorial algorithms on graphs using neural networks. </dt> 
- 		<dd> We are working on designing neural networks which detect hard decision tasks on graphs, e.g., subgraph isomorphism, maximum common subgraph detection, etc. For details, please look into 
+  <dt>  Differentiable surrogates for combinatorial algorithms on graphs using neural networks. </dt> 
+ 		<dd> We are working on designing neural networks which approximate hard decision tasks on graphs. For e.g., we have developed neural tools for subgraph isomorphism and maximum common subgraph detection. For details, please look into 
   <a href="https://indradyumna.github.io/pdfs/IsoNet_main.pdf">ISONET</a>, <a href="https://github.com/Indradyumna/MCSNET">XMCS.</a></dd> 
 
   <dt>  ML with data-diet. </dt>
-<dd> Modern machine learning models are trained on large data, which demands lot of resource in terms of money and energy. To tackle this problem, we have proposed
-compute efficient methods for selecting training instances. In our past projects, we used both combinatorial and neurally guided subset selection methods.
+<dd> Modern machine learning models are trained on datasets of ever-increasing size. Such models are often compute-hungry and require expensive maintenance and have large energy footprint. To tackle this problem, we have proposed compute efficient methods to strategically select training instances, such that overall performance does not degrade. In our past projects, we have used both combinatorial and neurally guided subset selection methods.
 See  <a href="https://github.com/abir-de/SELCON"> Selcon</a>,
      <a href="https://arxiv.org/abs/2103.00123"> Gradmatch</a>, 
      <a href="https://openreview.net/pdf?id=q3fCWoC9l0"> Subselnet</a>, 
@@ -175,12 +174,12 @@ See  <a href="https://github.com/abir-de/SELCON"> Selcon</a>,
 <dd> We are working on designing neural models for submodular or approximate submodular functions.  
 See  <a href="https://arxiv.org/abs/2210.11033"> Flexsubnet</a>. </dd>
 
-   <dt> Learning with human in loop. </dt>
-<dd> We are working on how to distribute decision tasks across human and machines. See for example 
+   <dt> Human in the loop machine learning. </dt>
+<dd> We are developing methods to distribute decision tasks across human and machines. See for example 
  <a href="https://arxiv.org/abs/1909.02963">AAAI 2020</a>, <a href="https://arxiv.org/abs/2006.11845">AAAI 2021</a> and  <a href="https://arxiv.org/abs/2103.08902">NeurIPS 2021</a> papers.  We are also working on how to effectively query features to facilitate
 assistance. See <a href="https://arxiv.org/abs/2312.12574">Genex</a>.
-<dt> Information cascade.</dt>
-<dd> Despite quite rich and classical topic, I still work on some problems on information cascade, that demands data-driven challenges, e.g., <a href="XX"> capactity constraints</a>, <a href="XX">preferance estimation</a></dd>
+<dt> Information diffusion.</dt>
+<dd> Despite this being quite a rich and classical topic, we have developed methods for novel information cascade problems, e.g., <a href="https://dl.acm.org/doi/abs/10.1145/3539597.3570433">problems involving capacity constraints</a>, and <a href="XX">preference estimation</a></dd>.
  </dl>
 
 See <a href="pub.html" >publications</a> for more details.
@@ -189,7 +188,7 @@ See <a href="pub.html" >publications</a> for more details.
 <!!!!!!!!!!!!!!!!!!------------->
 
 <h4 class="ui top dividing header" id="rec">Recognitions</h4>
-<dd> Our team (Indra Roy, Soumen Chakrabarti and I) is the winner (2022) and the superwinner (2023) of Qualcomm innovation fellowship.
+<dd> Our team (Indra Roy, Soumen Chakrabarti and I) is the winner (2022) and the superwinner (2023) of Qualcomm Innovation Fellowship.
 <dd> Indian National Academy of Engineering Young Engineer Award, 2021. </dd> 
 <dd> Prof. Krithi Ramamritham Award for Creative Research at IIT Bombay 2020. </dd>
 <dd> Indian National Academy of Engineering best PhD project award, 2019. </dd>
@@ -216,7 +215,7 @@ Senior PC at AAAI 2022-2024, PC member at NeurIPS 2016-2023, ICML 2018-2023, ICL
 <h4 class="ui top dividing header" id="basics">Graduate students</h4>
 <dd><a href=https://indradyumna.github.io/> Indradyumna Roy</a> (PhD student, co-advised with Soumen Chakrabarti),</dd> 
 <dd><a href=https://nlokesh.netlify.app/> N Lokesh</a> (PhD student, co-advisor, supervised by Sunita Sarawagi),</dd>
-<dd><a href=https://pritishc.com/> Pritish Chakrabarti (MS by research),</dd>
+<dd><a href=https://pritishc.com/> Pritish Chakraborty (MS by research),</dd>
 <dd><a href=https://www.linkedin.com/in/ninad-gandhi-264263167/?originalSubdomain=in>  Ninad Gandhi (MS by research)</dd>
 <dd><a href=https://eeshaanjain.github.io/>  Eeshaan Jain (Dual Degree)</dd>
 <dd><a href=https://www.linkedin.com/in/pranamya-kulkarni-086524190/?originalSubdomain=in>  Pranamya Kulkarni (Dual Degree)</dd>
