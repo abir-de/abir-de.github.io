@@ -148,7 +148,7 @@
     <h1 class="ui header">
       <div class="content" style="margin-top:20px;">Abir De</div>
     </h1>
-<hx >  Assistant Professor<br>
+<hx >  Associate Professor<br>
    <a href="https://www.cse.iitb.ac.in"> Department of Computer Science and Engineering, </a><br> 
   <a href="https://www.iitb.ac.in/"> Indian Institute of Technology Bombay</a><br></hx>
          
