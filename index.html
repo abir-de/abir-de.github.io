@@ -18,7 +18,7 @@
   <style type="text/css">
   body {
     background-color: #fffbf7 ;
-   
+
     background-repeat: no-repeat;
     -webkit-print-color-adjust: exact;
   background-attachment: fixed;
@@ -32,9 +32,17 @@
 	margin-left: auto;
 	margin-right: auto;
 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
   }
-   
-   
+
+  /* refined square bullets for <dtx> list items */
+  dtx::marker {
+    color: #999;
+    font-size: 0.75em;
+  }
+
+
    hx  {
   font-family:  arial;
 }
@@ -108,13 +116,13 @@
   border-radius: 50%;
  display: inline-block;
  float: left;
- margin: auto -20px;	
+ margin: auto -20px;
 
- 
+
 }
    div1 {
       background-color: red;
- 
+
   margin-right: 1590px;
   margin-left: -8000px;
 	}
@@ -125,11 +133,11 @@
 
 <body>
 
-	
-  
+
+
     <div class="ui fixed inverted menu">
     <div class="ui container">
- 
+
        <a href="#res" class="header item">
  	Research interests
       </a>
@@ -149,38 +157,38 @@
       <div class="content" style="margin-top:20px;">Abir De</div>
     </h1>
 <hx >  Associate Professor<br>
-   <a href="https://www.cse.iitb.ac.in"> Department of Computer Science and Engineering, </a><br> 
+   <a href="https://www.cse.iitb.ac.in"> Department of Computer Science and Engineering, </a><br>
   <a href="https://www.iitb.ac.in/"> Indian Institute of Technology Bombay</a><br></hx>
-         
+
  <hxx >    <i class="fa fa-envelope"></i> $MyFirstName@cse.iitb.ac.in</hxx>
-   
+
     <h4 class="ui top dividing header" id="res">Research Interests</h4>
 <p  align="justify">
-My current research focus is designing machine learning models and methods for structured objects, e.g., graphs and sets. 
-The specific sub-areas that I am currently working in are as follows: 
+My current research focus is designing machine learning models and methods for structured objects, e.g., graphs and sets.
+The specific sub-areas that I am currently working in are as follows:
  <dl>
-  <dt>  Differentiable surrogates for combinatorial algorithms on graphs using neural networks. </dt> 
-    <dd> We are working on designing neural networks which approximate hard decision tasks on graphs. For e.g., we have developed neural tools for subgraph isomorphism and maximum common subgraph detection. For details, please look into 
+  <dt>  Differentiable surrogates for combinatorial algorithms on graphs using neural networks. </dt>
+    <dd> We are working on designing neural networks which approximate hard decision tasks on graphs. For e.g., we have developed neural tools for subgraph isomorphism and maximum common subgraph detection. For details, please look into
   <a href="https://indradyumna.github.io/pdfs/IsoNet_main.pdf">ISONET</a>,
   <a href="https://github.com/Indradyumna/MCSNET">XMCS,</a>
     <a href="https://arxiv.org/abs/2409.17687">GraphEdX,</a>
     <a href="https://openreview.net/forum?id=DFSb67ksVr">MxNet,</a>
    and the reaction yield prediction model <a href="https://openreview.net/pdf?id=sqjQ6p56GR">yieldNet,</a>
-  </dd> 
+  </dd>
 
   <dt>  Data-efficient machine learning. </dt>
 <dd> Modern machine learning models are trained on datasets of ever increasing size. Such models are often compute-hungry and require expensive maintenance and have large energy footprint. To tackle this problem, we have proposed compute efficient methods to strategically select training instances, such that overall performance does not degrade. In our past projects, we have used both combinatorial and neurally guided subset selection methods.
 See  <a href="https://github.com/abir-de/SELCON"> Selcon</a>,
-     <a href="https://arxiv.org/abs/2103.00123"> Gradmatch</a>, 
-     <a href="https://openreview.net/pdf?id=q3fCWoC9l0"> Subselnet</a>, 
-     <a href="https://github.com/structlearning/fhashnet"> Fhashnet</a>.  
+     <a href="https://arxiv.org/abs/2103.00123"> Gradmatch</a>,
+     <a href="https://openreview.net/pdf?id=q3fCWoC9l0"> Subselnet</a>,
+     <a href="https://github.com/structlearning/fhashnet"> Fhashnet</a>.
    </dd>
    <dt>  Neural models of set functions. </dt>
-<dd> We are working on designing neural models for submodular or approximate submodular functions.  
+<dd> We are working on designing neural models for submodular or approximate submodular functions.
 See  <a href="https://arxiv.org/abs/2210.11033"> Flexsubnet</a>. </dd>
 
    <dt> Human in the loop machine learning. </dt>
-<dd> We are developing methods to distribute decision tasks across humans and machines. See for example 
+<dd> We are developing methods to distribute decision tasks across humans and machines. See for example
  <a href="https://arxiv.org/abs/1909.02963">AAAI 2020</a>, <a href="https://arxiv.org/abs/2006.11845">AAAI 2021</a> and  <a href="https://arxiv.org/abs/2103.08902">NeurIPS 2021</a> papers.  We are also working on how to effectively query features to facilitate
 assistance. See <a href="https://arxiv.org/abs/2312.12574">Genex</a>.
 <dt> Information diffusion.</dt>
@@ -188,48 +196,48 @@ assistance. See <a href="https://arxiv.org/abs/2312.12574">Genex</a>.
  </dl>
 
 See <a href="pub.html" >publications</a> for more details.
- 
- 
+
+
 <!!!!!!!!!!!!!!!!!!------------->
 
 <h4 class="ui top dividing header" id="rec">Recognitions</h4>
 
 
-<dtx> Our team (Pritish Chakraborty, Soumen Chakrabarti and I) won the Qualcomm Innovation Fellowship 2025.</dtx> 
-<dtx> Bhide Family Chair (2025 - 2028).</dtx> 
-<dtx> Our team (Indra Roy, Soumen Chakrabarti and I) is the winner (2022) and the superwinner (2023) of Qualcomm Innovation Fellowship.</dtx> 
-<dtx> Indian National Academy of Engineering Young Engineer Award, 2021. </dtx> 
+<dtx> Our team (Pritish Chakraborty, Soumen Chakrabarti and I) won the Qualcomm Innovation Fellowship 2025.</dtx>
+<dtx> Bhide Family Chair (2025 - 2028).</dtx>
+<dtx> Our team (Indra Roy, Soumen Chakrabarti and I) is the winner (2022) and the superwinner (2023) of Qualcomm Innovation Fellowship.</dtx>
+<dtx> Indian National Academy of Engineering Young Engineer Award, 2021. </dtx>
 <dtx> Prof. Krithi Ramamritham Award for Creative Research at IIT Bombay 2020. </dtx>
 <dtx> Indian National Academy of Engineering innovative PhD project award, 2019. </dtx>
 <dtx> Google India PhD Fellowship for Social Computing 2013. </dtx>
-<dtx> Best Dual Degree Project   award in the year 2011 in the Department of Electrical Engineering, 
+<dtx> Best Dual Degree Project   award in the year 2011 in the Department of Electrical Engineering,
 IIT Kharagpur  </dtx>
 
  <h4 class="ui top dividing header" id="wtut">Workshop/Tutorial/Symposium</h4>
-<dtx> Co-organizing workshop on <a href="https://sites.google.com/view/diffcoalg2025"> Differentiable Learning of Combinatorial Algorithms</a> at NeurIPS 2025  </dtx> 
+<dtx> Co-organizing workshop on <a href="https://sites.google.com/view/diffcoalg2025"> Differentiable Learning of Combinatorial Algorithms</a> at NeurIPS 2025  </dtx>
 <dtx> Tutorial on <a href="https://cikm2025.org/program/tutorials">"Retrieval of Graph Structured Objects"   </a> (<a href="papers/mypapers/2025_TutorialGraphRetrieval.pdf">Proposal</a>) at CIKM 2025 </dtx>
-<dtx> Program co-chair of <a href="https://indoml.in"> IndoML 2023 </a> </dtx> 
-<dtx> Co-organizer of <a href="https://www.cse.iitb.ac.in/crs2023/">CSE research symposium  (CRS) 2023 </a> at IIT Bombay </dtx> 
-<dtx>  Tutorial on <a href = https://www.aimlsystems.org/2021/tutorials#t-2>  Human Assisted Learning </a> @ AIML systems conference 2021 </dtx> 
+<dtx> Program co-chair of <a href="https://indoml.in"> IndoML 2023 </a> </dtx>
+<dtx> Co-organizer of <a href="https://www.cse.iitb.ac.in/crs2023/">CSE research symposium  (CRS) 2023 </a> at IIT Bombay </dtx>
+<dtx>  Tutorial on <a href = https://www.aimlsystems.org/2021/tutorials#t-2>  Human Assisted Learning </a> @ AIML systems conference 2021 </dtx>
 <dtx>  Co-organizer of <a href = "https://sites.google.com/view/icml-2021-subsetml">SubSetML workshop</a> at ICML 2021 </dtx>
 <dtx>  Tutorial on <a href= https://aaai.org/Conferences/AAAI-22/aaai22tutorials >  Subset Selection in Machine Learning: Theory, Applications, and Hands On</a>  @ AAAI 2022 </dtx>
 <dtx>  Workshop on <a href = "https://sites.google.com/view/tpp-neurips-2019"> Learning with Temporal Point Processes
 </a> at NeurIPS 2021.  </dtx>
 
- 
+
 
 
 
 <h4 class="ui top dividing header" id="basics">Conference Committees</h4>
-Area Chair at ICLR 2026, NeurIPS 2025.
+Area Chair at ICLR, NeurIPS, and ICML (since 2025).
 <br>
-Senior PC at AAAI 2022-2024, PC member at NeurIPS 2016-2023, ICML 2018-2023, ICLR 2018-2023, WSDM 2020--2022.
+Past reviewer for AAAI and WSDM.
 
 <h4 class="ui top dividing header" id="basics">Current PhD students</h4>
-<dtx><a href=https://indradyumna.github.io/> Indradyumna Roy</a></dtx> 
+<dtx><a href=https://indradyumna.github.io/> Indradyumna Roy</a></dtx>
 <dtx><a href=https://pritishc.com/> Pritish Chakraborty </a> </dtx>
 <dtx><a href=https://www.linkedin.com/in/ninad-gandhi-264263167/?originalSubdomain=in>  Ninad Gandhi  </a>    </dtx>
 <br><br>
- 
+
 </body>
 </html>
